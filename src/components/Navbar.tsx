@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RiCloseLargeFill } from 'react-icons/ri'
+import { Button } from './ui/moving-border'
 
 const Navbar = () => {
 
@@ -21,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="w-11/12 md:max-w-9/10 mx-auto flex items-center justify-between">
+      <div className="w-11/12 md:max-w-10/12 mt-3 mx-auto flex items-center justify-between">
         <div className="flex items-center gap-0">
           <Image
             src="/assets/logo.svg"
@@ -37,7 +38,7 @@ const Navbar = () => {
 
         <div className='w-7/12 '>
           <div className='sm:flex items-center justify-between hidden '>
-            <ul className='flex gap-8  '>
+            <ul className='flex gap-8 text-gray-750 '>
               <li>Features</li>
               <li>Pricing</li>
               <li>Scurity</li>
@@ -45,12 +46,21 @@ const Navbar = () => {
             </ul>
 
             <div>
-              <Link href={'/'}> Contact Us</Link>
+              <Button
+                borderRadius="9999px"
+                containerClassName="inline-flex h-10 w-auto"
+                borderClassName="bg-[radial-gradient(#38bdf8_40%,transparent_60%)]"
+                className="border border-purple-300 bg-sky-600 text-white hover:bg-sky-800 transition px-4 py-2 text-sm font-medium"
+              >
+                <Link href="/">Contact Us</Link>
+              </Button>
+
+
             </div>
           </div>
         </div>
 
-        <div className='md:hidden pl-4'>
+        <div className='md:hidden pl-4 cursor-pointer'>
           {menuOpen ? <RiCloseLargeFill onClick={toggleMenu} />
             : <GiHamburgerMenu onClick={toggleMenu} />
           }
@@ -82,7 +92,7 @@ const Navbar = () => {
           </ul>
         }
       </div>
-    </nav>
+    </nav >
   )
 }
 
