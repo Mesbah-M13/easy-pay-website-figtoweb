@@ -72,7 +72,7 @@ const HeroSection = () => {
             />
             <p className="text-slate-800  ">No Card Required</p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className=" hidden md:block-line md:flex items-center gap-2">
             <PiCheckCircleBold
               className="text-gray-600 text-md md:text-xl"
               style={{ filter: "drop-shadow(0 0 1px currentColor)" }}

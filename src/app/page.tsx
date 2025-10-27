@@ -1,3 +1,4 @@
+import AppPromotion from "@/components/AppPromotion";
 import Features from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
@@ -20,6 +21,7 @@ export default function Home() {
       <Security />
       <Pricing />
       <Testimonials />
+      <AppPromotion />
     </div>
   )
 }
