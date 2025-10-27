@@ -52,7 +52,7 @@ const Navbar = () => {
                 borderClassName="bg-[radial-gradient(#38bdf8_40%,transparent_60%)]"
                 className="border border-purple-300 bg-sky-600 text-white hover:bg-sky-800 transition px-4 py-2 text-sm font-medium"
               >
-                <Link href="/">Contact Us</Link>
+                <Link href="#contact">Contact Us</Link>
               </Button>
 
 

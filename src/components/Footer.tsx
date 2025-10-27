@@ -21,16 +21,16 @@ const Footer = () => {
               <h2 className="mb-6 text-md  font-semibold text-gray-900  ">Short links</h2>
               <ul className="text-gray-600 text-sm font-medium">
                 <li className="mb-4">
-                  <a href="https://github.com/themesberg/Easy Pay" className="hover:underline ">Features</a>
+                  <a href="https://easy-pay-website-figtoweb.vercel.app/" className="hover:underline ">Features</a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">How it works</a>
+                  <a href="https://easy-pay-website-figtoweb.vercel.app/" className="hover:underline">How it works</a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Security</a>
+                  <a href="https://easy-pay-website-figtoweb.vercel.app/" className="hover:underline">Security</a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Testimonial</a>
+                  <a href="https://easy-pay-website-figtoweb.vercel.app/" className="hover:underline">Testimonial</a>
                 </li>
               </ul>
             </div>

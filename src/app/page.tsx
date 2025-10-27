@@ -1,4 +1,5 @@
 import AppPromotion from "@/components/AppPromotion";
+import ContactSection from "@/components/ContactSection";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import GlobalOps from "@/components/GlobalOps";
@@ -25,6 +26,7 @@ export default function Home() {
       <GlobalOps />
       <Testimonials />
       <AppPromotion />
+      <ContactSection />
       <Footer />
     </div>
   )
