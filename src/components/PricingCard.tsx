@@ -3,7 +3,7 @@ import React from "react";
 const PricingCard = () => {
   return (
 
-    <div className="flex mt-12 flex-col md:flex-row justify-between items-center  ">
+    <div className="flex mt-12 flex-col md:flex-row justify-between items-center gap-8 ">
 
       {/* <!-- Card 1 --> */}
       <div className="bg-white rounded-2xl shadow-lg w-96  h-[500px] p-14 border-2 border-gray-200 flex flex-col justify-between transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
