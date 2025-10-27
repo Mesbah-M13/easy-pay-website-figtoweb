@@ -1,6 +1,7 @@
 import AppPromotion from "@/components/AppPromotion";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
+import GlobalOps from "@/components/GlobalOps";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
@@ -21,6 +22,7 @@ export default function Home() {
       <Works />
       <Security />
       <Pricing />
+      <GlobalOps />
       <Testimonials />
       <AppPromotion />
       <Footer />

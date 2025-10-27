@@ -8,7 +8,7 @@ const AppPromotion = () => {
       style={{ backgroundImage: "url('/assets/bg.svg')" }}
     >
       <div className="relative max-w-3xl mx-auto text-center px-4">
-        <h2 className="pt-24 text-3xl md:text-4xl text-white font-semibold leading-snug mb-4">
+        <h2 className="pt-8 sm:pt-24 text-3xl md:text-4xl text-white font-semibold leading-snug mb-4">
           Ready to experience seamless secure payments globally
         </h2>
         <p className="mb-8 text-sm md:text-white text-gray-200">
@@ -17,10 +17,10 @@ const AppPromotion = () => {
 
         {/* Buttons */}
         <div className="flex justify-center gap-4">
-          <button className="bg-blue-600 hover:bg-blue-700 transition rounded-full px-6 py-2 text-white font-semibold">
+          <button className="bg-blue-600 hover:bg-blue-700 transition rounded-full p-3 sm:px-6 sm:py-2 text-white font-medium sm:font-semibold text-sm sm:text-lg">
             Download the App
           </button>
-          <button className="border border-white text-white hover:bg-amber-50 hover:text-blue-700 transition rounded-full px-6 py-2 font-semibold">
+          <button className="border border-white text-white hover:bg-amber-50 hover:text-blue-700 transition rounded-full p-3 sm:px-6 sm:py-2 ffont-medium sm:font-semibold text-sm sm:text-lg">
             Get Started Now
           </button>
         </div>
