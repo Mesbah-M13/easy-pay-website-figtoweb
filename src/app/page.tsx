@@ -1,6 +1,9 @@
 import Features from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
+import Security from "@/components/Security";
+import Testimonials from "@/components/Testimonials";
 import Works from "@/components/Works";
 
 export default function Home() {
@@ -14,6 +17,9 @@ export default function Home() {
       </div>
       <Features />
       <Works />
+      <Security />
+      <Pricing />
+      <Testimonials />
     </div>
   )
 }

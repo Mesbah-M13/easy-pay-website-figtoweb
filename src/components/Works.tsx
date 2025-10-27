@@ -4,7 +4,7 @@ import React from "react";
 
 const Works = () => {
   return (
-    <div className="bg-slate-100 min-h-screen pt-40">
+    <div className="bg-slate-100 min-h-screen pt-40 md:pb-30">
       <div className="w-full md:w-10/12 md:max-w-10/12 mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-8">
         <div className="relative">
           <h1 className="text-purple-500 text-md font-bold">HOW IT WORKS</h1>
@@ -14,8 +14,6 @@ const Works = () => {
             <span className="inline-block align-middle">more in 3 simple steps</span>
           </h1>
         </div>
-
-        {/* Button aligned with second line */}
         <div className="mt-18"><Link
           href="/"
           className="md:ml-6 mt-4 md:mt-[2.7rem] bg-blue-600 px-6 py-4 text-md rounded-4xl text-white whitespace-nowrap self-start"
@@ -57,7 +55,7 @@ const Works = () => {
             </div>
 
             {/* <!-- Step 2 --> */}
-            <div className="p-6 flex flex-col items-center md:items-start">
+            <div className="p-6 pl-14 flex flex-col items-center md:items-start">
               <div className="flex items-center space-x-3 mb-4">
                 {/* <span className="text-6xl font-extrabold text-gray-100 leading-none">01</span> */}
                 <Image
@@ -85,7 +83,7 @@ const Works = () => {
             </div>
 
             {/* <!-- Step 3 --> */}
-            <div className="p-6 flex flex-col items-center md:items-start">
+            <div className="p-6 pl-14 flex flex-col items-center md:items-start">
               <div className="flex items-center space-x-3 mb-4">
                 {/* <span className="text-6xl font-extrabold text-gray-100 leading-none">01</span> */}
                 <Image
@@ -116,11 +114,11 @@ const Works = () => {
         </div>
       </section>
 
-      <div className="w-10/12 mx-auto px-6">
+      <div className="w-[82vw] mx-auto pl-6">
         <Image
           src="/assets/working_man.svg"
-          width={1600}   // wider
-          height={600}   // taller for better aspect
+          width={1200}
+          height={400}
           alt="working & drinking coffee"
           className="w-full h-auto"
         />
