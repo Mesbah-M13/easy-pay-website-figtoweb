@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "plus.unsplash.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+        pathname: "/**", // allows all paths under placehold.co
+      },
     ],
   },
 };

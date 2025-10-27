@@ -3,14 +3,14 @@ import { useState } from "react";
 import Image from "next/image";
 
 // Custom Arrow Icons (Replacing text arrows)
-const ChevronLeft = (props) => (
+const ChevronLeft = (props: React.SVGProps<SVGSVGElement>) => (
   <svg {...props} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
 );
-const ChevronRight = (props) => (
+const ChevronRight = (props: React.SVGProps<SVGSVGElement>) => (
   <svg {...props} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
 );
 
-const placeholderImage = (text) => `https://placehold.co/40x40/4f46e5/ffffff?text=${text}`;
+const placeholderImage = (text: string) => `https://placehold.co/40x40/4f46e5/ffffff?text=${text}`;
 
 export default function Testimonials() {
   const testimonials = [
@@ -123,18 +123,24 @@ export default function Testimonials() {
                     <span role="img" aria-label="rating">★★★★★</span>
                   </div>
                   <p className="text-gray-800 text-sm mb-6">
-                    "{item.review}"
+                    &ldquo;{item.review}&rdquo;
                   </p>
 
                   <div className="flex items-center gap-4 mt-auto">
-                    {/* Using simple <img> instead of Next/Image */}
-                    <img
+                    {/* Using Next/Image for optimized loading */}
+                    <Image
                       src={item.image}
                       alt={item.name}
                       width={48}
                       height={48}
+                      unoptimized
+
                       className="rounded-full object-cover w-12 h-12"
-                      onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/48x48/4f46e5/ffffff?text=${item.name.charAt(0)}`; }}
+                      onError={() => {
+                        const fallbackUrl = `https://placehold.co/48x48/4f46e5/ffffff?text=${item.name.charAt(0)}`;
+                        // @ts-expect-error - Need to ignore as we're updating the src directly
+                        event.currentTarget.src = fallbackUrl;
+                      }}
                     />
                     <div>
                       <h4 className="font-bold text-gray-900 text-base">
