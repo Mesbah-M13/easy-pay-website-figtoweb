@@ -4,11 +4,11 @@ import React from 'react'
 const AppPromotion = () => {
   return (
     <section
-      className="w-full md:w-10/12 md:max-w-10/12 mx-auto my-20 h-[60vh] bg-no-repeat bg-cover bg-center rounded-2xl"
+      className="w-full md:w-10/12 md:max-w-10/12 mx-auto m-0 sm:my-20 h-[60vh] bg-no-repeat bg-cover bg-center sm:rounded-2xl"
       style={{ backgroundImage: "url('/assets/bg.svg')" }}
     >
       <div className="relative max-w-3xl mx-auto text-center px-4">
-        <h2 className="pt-18 text-3xl md:text-4xl text-white font-semibold leading-snug mb-4">
+        <h2 className="pt-24 text-3xl md:text-4xl text-white font-semibold leading-snug mb-4">
           Ready to experience seamless secure payments globally
         </h2>
         <p className="mb-8 text-sm md:text-white text-gray-200">

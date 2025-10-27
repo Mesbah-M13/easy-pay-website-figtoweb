@@ -6,7 +6,8 @@ const PricingCard = () => {
     <div className="flex mt-12 flex-col md:flex-row justify-between items-center gap-8 ">
 
       {/* <!-- Card 1 --> */}
-      <div className="bg-white rounded-2xl shadow-lg w-96  h-[500px] p-14 border-2 border-gray-200 flex flex-col justify-between transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+      <div className="bg-white rounded-2xl shadow-lg w-full sm:w-80 md:w-96 h-[500px] p-14 border-2 border-gray-200 flex flex-col justify-between transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+
         <div>
           <h3 className="text-xl font-semibold text-gray-900">Free Plan</h3>
           <p className="text-gray-500 mt-1">Free for personal payments.</p>
@@ -35,7 +36,8 @@ const PricingCard = () => {
       </div>
 
       {/* <!-- Card 2 (Middle Highlight) --> */}
-      <div className="bg-black rounded-2xl shadow-lg w-96 h-[500px] p-11 flex flex-col justify-between transition-all duration-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(0,0,0,0.5)] hover:-translate-y-3">
+      <div className="bg-black rounded-2xl shadow-lg w-full sm:w-80 md:w-96 h-[500px] p-11 flex flex-col justify-between transition-all duration-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(0,0,0,0.5)] hover:-translate-y-3">
+
         <div>
           <h3 className="text-xl font-semibold text-white">Advanced</h3>
           <p className="text-gray-400 mt-1">Minimal fees for advanced transactions</p>
@@ -44,6 +46,7 @@ const PricingCard = () => {
             <span className="text-5xl font-bold text-white">$19</span>
             <span className="text-gray-400 text-lg">/month</span>
           </div>
+          <hr className="m-8 h-[2px] border-0 bg-gradient-to-r from-gray-900 via-gray-200 to-gray-900" />
 
           <ul className="mt-6 space-y-3 text-gray-300">
             <li className="flex items-center gap-2">
@@ -67,7 +70,8 @@ const PricingCard = () => {
       </div>
 
       {/* <!-- Card 3 --> */}
-      <div className="bg-white rounded-2xl shadow-lg w-96 h-[500px] p-11 flex flex-col border-2 border-gray-200 justify-between transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+      <div className="bg-white rounded-2xl shadow-lg w-full sm:w-80 md:w-96 h-[500px] p-11 flex flex-col border-2 border-gray-200 justify-between transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+
         <div>
           <h3 className="text-xl font-semibold text-gray-900">Business</h3>
           <p className="text-gray-500 mt-1">Premium business transactions</p>

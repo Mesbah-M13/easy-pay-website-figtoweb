@@ -50,8 +50,8 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-gradient-to-br from-white to-purple-100/90 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section className="py-4 sm:py-20 px-4 md:px-8 bg-gradient-to-br from-white to-purple-100/80 overflow-hidden">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-2 sm:gap-10 items-center">
 
         {/* LEFT SIDE: Content and Controls */}
         <div className="md:pr-10">
@@ -68,24 +68,24 @@ export default function Testimonials() {
           </p>
 
           {/* ARROWS */}
-          <div className="flex gap-3 mt-8">
+          <div className="flex justify-center sm:justify-start  gap-3 mt-8">
             <button
               onClick={prevTestimonial}
               aria-label="Previous testimonial"
-              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-200 transition text-gray-700"
+              className="w-8 h-8 sm:w-12 sm:h-12 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-200 transition text-gray-700"
             >
               <ChevronLeft />
             </button>
             <button
               onClick={nextTestimonial}
               aria-label="Next testimonial"
-              className="w-12 h-12 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-gray-700 transition"
+              className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-gray-900 text-white flex items-center justify-center hover:bg-gray-700 transition"
             >
               <ChevronRight />
             </button>
           </div>
           {/* Dots/Indicators */}
-          <div className="flex gap-2 mt-4">
+          <div className="flex justify-center sm:justify-start gap-2 mt-4">
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -99,7 +99,7 @@ export default function Testimonials() {
         </div>
 
         {/* RIGHT SIDE: Slider */}
-        {/* Added fixed height (h-96) to stabilize the vertical position of the card */}
+
         <div className="relative overflow-hidden w-full h-96 md:h-auto flex items-center justify-center">
 
           {/* Slider content wrapper. The width calculation is correct for the track. */}
