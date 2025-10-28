@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, SyntheticEvent } from "react";
 import Image from "next/image";
 
 // Custom Arrow Icons (Replacing text arrows)
@@ -41,6 +41,7 @@ export default function Testimonials() {
 
   const nextTestimonial = () => {
     setCurrent((prev) => (prev + 1) % testimonials.length);
+    console.log(current);
   };
 
   const prevTestimonial = () => {
@@ -102,10 +103,8 @@ export default function Testimonials() {
 
         <div className="relative overflow-hidden w-full h-96 md:h-auto flex items-center justify-center">
 
-          {/* Slider content wrapper. The width calculation is correct for the track. */}
           <div
             className="flex h-full transition-transform duration-500 ease-in-out"
-            // The transform moves the entire flex row horizontally based on the current index
             style={{
               transform: `translateX(-${current * 100}%)`,
               width: `${testimonials.length * 100}%`
@@ -114,9 +113,7 @@ export default function Testimonials() {
             {testimonials.map((item, index) => (
               <div
                 key={index}
-                // Key Fix: w-full and flex-shrink-0 ensure it takes up exactly the visible space
                 className="w-full flex-shrink-0 flex items-center justify-center"
-              // Removed inline width style here as w-full handles it correctly
               >
                 <div className="bg-white rounded-3xl shadow-xl p-8 max-w-sm w-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl flex flex-col justify-between border border-gray-100">
                   <div className="flex mb-4 text-yellow-500 text-xl">
@@ -127,7 +124,6 @@ export default function Testimonials() {
                   </p>
 
                   <div className="flex items-center gap-4 mt-auto">
-                    {/* Using Next/Image for optimized loading */}
                     <Image
                       src={item.image}
                       alt={item.name}
@@ -136,10 +132,11 @@ export default function Testimonials() {
                       unoptimized
 
                       className="rounded-full object-cover w-12 h-12"
-                      onError={() => {
+                      onError={(e: SyntheticEvent<HTMLImageElement, Event>) => {
+                        const target = e.currentTarget as HTMLImageElement | null;
+                        if (!target) return;
                         const fallbackUrl = `https://placehold.co/48x48/4f46e5/ffffff?text=${item.name.charAt(0)}`;
-                        // @ts-expect-error - Need to ignore as we're updating the src directly
-                        event.currentTarget.src = fallbackUrl;
+                        target.src = fallbackUrl;
                       }}
                     />
                     <div>

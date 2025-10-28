@@ -73,7 +73,7 @@ const GlobalOps = () => {
               alt={item.title}
               width={320}
               height={320}
-              className="pointer-events-none relative z-10 h-80 w-80 object-cover rounded-md"
+              className="pointer-events-none relative z-10 h-80 w-80 object-cover rounded-md aspect-square"
               unoptimized
             />
             <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">

@@ -51,3 +51,7 @@ body {
   animation: scroll var(--animation-duration, 40s) linear infinite
     var(--animation-direction, forwards);
 }
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
