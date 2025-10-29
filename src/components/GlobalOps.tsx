@@ -10,12 +10,12 @@ const GlobalOps = () => {
     //     "https://images.unsplash.com/photo-1732310216648-603c0255c000?auto=format&fit=crop&w=320&q=80",
     //   className: "absolute top-10 left-[20%] rotate-[-5deg]",
     // },
-    // {
-    //   title: "The Narrator",
-    //   image:
-    //     "https://images.unsplash.com/photo-1697909623564-3dae17f6c20b?auto=format&fit=crop&w=320&q=80",
-    //   className: "absolute top-40 left-[25%] rotate-[-7deg]",
-    // },
+    {
+      title: "Italy",
+      image:
+        "https://images.unsplash.com/photo-1583855282680-6dbdc69b0932?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
+      className: "absolute top-40 left-[25%] rotate-[-7deg]",
+    },
     {
       title: "Dhaka",
       image:
@@ -25,13 +25,13 @@ const GlobalOps = () => {
     {
       title: "Japan",
       image:
-        "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=320&q=80",
+        "https://images.pexels.com/photos/962925/pexels-photo-962925.jpeg",
       className: "absolute top-32 left-[55%] rotate-[10deg]",
     },
     {
-      title: "Norway",
+      title: "Germany",
       image:
-        "https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?auto=format&fit=crop&w=320&q=80",
+        "https://images.unsplash.com/photo-1604854577019-d96a524e60c8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=627",
       className: "absolute top-20 right-[35%] rotate-[2deg]",
     },
     {
