@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RiCloseLargeFill } from 'react-icons/ri'
-import { Button } from './ui/moving-border'
+import { Button } from '../ui/moving-border'
 
 const Navbar = () => {
 

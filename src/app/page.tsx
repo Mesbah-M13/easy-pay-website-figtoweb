@@ -1,14 +1,14 @@
-import AppPromotion from "@/components/AppPromotion";
-import ContactSection from "@/components/ContactSection";
-import Features from "@/components/Features";
-import Footer from "@/components/Footer";
-import GlobalOps from "@/components/GlobalOps";
-import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
-import Pricing from "@/components/Pricing";
-import Security from "@/components/Security";
-import Testimonials from "@/components/Testimonials";
-import Works from "@/components/Works";
+import AppPromotion from "@/components/sections/AppPromotion";
+import ContactSection from "@/components/sections/ContactSection";
+import Features from "@/components/sections/Features";
+import Footer from "@/components/layout/Footer";
+import GlobalOps from "@/components/sections/GlobalOps";
+import HeroSection from "@/components/sections/HeroSection";
+import Navbar from "@/components/layout/Navbar";
+import Pricing from "@/components/sections/Pricing";
+import Security from "@/components/sections/Security";
+import Testimonials from "@/components/sections/Testimonials";
+import Works from "@/components/sections/Works";
 
 export default function Home() {
   return (

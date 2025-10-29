@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 const Features = () => {
   const images = [

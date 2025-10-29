@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { DraggableCardBody, DraggableCardContainer } from "./ui/draggable-card";
+import { DraggableCardBody, DraggableCardContainer } from "../ui/draggable-card";
 
 const GlobalOps = () => {
   const items = [

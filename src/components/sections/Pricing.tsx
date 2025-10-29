@@ -10,8 +10,7 @@ const Pricing = (): JSX.Element => {
         <h1 className='mt-2 text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug'>
           Simple transparent pricing
           <span className="sm:hidden">&nbsp;</span>
-
-          <br className='hidden' />
+          <br className='hidden sm:block' />
           no hidden fees
         </h1>
       </div>
