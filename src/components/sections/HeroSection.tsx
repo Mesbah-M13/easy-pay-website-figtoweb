@@ -25,7 +25,7 @@ const HeroSection = () => {
             </span>{" "}
           </h1>
 
-          <p className="mt-6 text-[12px] sm:text-[14px] text-gray-600 md:text-gray-500 tracking-wide">
+          <p className="mt-6 text-[12px] sm:text-[18px] text-gray-600 md:text-gray-500 tracking-wide">
             Experience the future of payments:fast,secure,and tailored
             <br className="hidden md:block" />
             for the next gerneration's convenience and trust.
@@ -48,7 +48,7 @@ const HeroSection = () => {
               <h1 className=" text-sm md:text-md font-medium">App Store</h1>
             </span>
           </div>
-          <div className="flex gap-1 md:gap-2 bg-black px-4 py-4 md:px-3 lg:px-1 md:py-4 rounded-2xl items-center">
+          {/* <div className="flex gap-1 md:gap-2 bg-black px-4 py-4 md:px-3 lg:px-1 md:py-4 rounded-2xl items-center">
             <Image
               src="/assets/google-playstore.svg"
               alt="playstore logo"
@@ -61,9 +61,9 @@ const HeroSection = () => {
               <p className="text-[8px] md:text-xs">GET IT ON</p>
               <h1 className=" text-sm md:text-md font-medium">Google Play</h1>
             </span>
-          </div>
+          </div> */}
 
-          {/* <div className="flex gap-2 md:gap-4 bg-black px-3 py-4 md:px-4 md:py-4 rounded-2xl items-center">
+          <div className="flex gap-2 md:gap-2 bg-black px-3 py-4 md:px-4 md:py-4 rounded-2xl items-center">
             <Image
               src="/assets/google-playstore.svg"
               alt="playstore logo"
@@ -72,11 +72,11 @@ const HeroSection = () => {
               className="w-6 h-6 md:w-6 md:h-6"
 
             />
-            <span className="text-white">
+            <span className="text-white xl:ml-1.5 lg:w-[7.5vw] xl:w-auto">
               <p className="text-[8px] md:text-xs">GET IT ON</p>
               <h1 className="text-sm md:text-md font-normal md:font-medium">Google Play</h1>
             </span>
-          </div> */}
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-baseline gap-2 md:gap-4 mt-6 md:mt-4 lg:mb-12">
@@ -87,7 +87,7 @@ const HeroSection = () => {
             />
             <p className="text-slate-800  ">No Card Required</p>
           </div>
-          <div className=" hidden md:block-line md:flex items-center gap-2">
+          <div className="  flex items-center gap-2">
             <PiCheckCircleBold
               className="text-gray-600 text-md md:text-xl"
               style={{ filter: "drop-shadow(0 0 1px currentColor)" }}
