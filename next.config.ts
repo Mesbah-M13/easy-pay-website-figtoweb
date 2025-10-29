@@ -14,6 +14,11 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "images.pexels.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "placehold.co",
         pathname: "/**", // allows all paths under placehold.co
       },
