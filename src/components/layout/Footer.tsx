@@ -1,8 +1,8 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
   return (
-
 
     <footer className="bg-gradient-to-b from-white via-gray-50 to-purple-300 bg-[length:100%_200%] bg-bottom">
 
@@ -10,8 +10,9 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://Easy Pay.com/" className="flex items-center">
-              <img src="/assets/logo.svg" className="h-18 me-3" alt="Easy Pay Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap ">Easy Pay</span>
+              <Image src="/assets/logo.svg" width={44}
+                height={44} alt="Easy Pay Logo" />
+              <span className=" -mt-2 self-center text-2xl font-semibold whitespace-nowrap ">Easy Pay</span>
             </a>
             <p className='w-[90%] sm:w-[46%] text-gray-600'>Easy Pay offers secure, seamless, and fee-free payments for effortless global transactions.</p>
           </div>

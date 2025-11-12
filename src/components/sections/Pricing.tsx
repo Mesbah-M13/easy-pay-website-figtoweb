@@ -16,7 +16,7 @@ const Pricing = (): JSX.Element => {
       </div>
 
       {/* Pricing cards */}
-      <div className='mt-10 flex flex-col md:flex-row md:flex-nowrap justify-center '>
+      <div className='mt-10 flex flex-col md:flex-row md:flex-nowrap justify-center md:justify-between '>
         <PricingCard />
 
       </div>

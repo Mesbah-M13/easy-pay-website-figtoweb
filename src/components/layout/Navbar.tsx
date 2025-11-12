@@ -38,7 +38,7 @@ const Navbar = () => {
 
         <div className='w-7/12 '>
           <div className='sm:flex items-center justify-between hidden '>
-            <ul className='flex gap-8 text-gray-750 '>
+            <ul className='flex gap-8 text-gray-750 cursor-pointer '>
               <li>Features</li>
               <li>Pricing</li>
               <li>Scurity</li>
